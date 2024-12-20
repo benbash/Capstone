@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <header class="header">
+      <nav>
+        <h1>TaskMaster</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">For Teams</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Price</a></li>
+          <li><a href="#"></a>Login in</a></li>
+          <li><a href="#">Start for free</a></li>
+        </ul>
+      </nav>
+    </header>
+  </header>
+  <h1>TaskMaster</h1>
+    <form id="taskForm">
+        <input type="text" id="title" placeholder="Task Title" required />
+        <textarea id="description" placeholder="Task Description" rows="3" required></textarea>
+        <input type="date" id="deadline" required />
+        <select id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button type="submit">Add Task</button>
+    </form>
+
+  <div id="tasks"></div>
+  <script src= "./script.js"></script>
+  <script src="./server.js"></script>
+  </body>
+</html>
